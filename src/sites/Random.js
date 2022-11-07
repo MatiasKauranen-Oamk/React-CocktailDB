@@ -88,12 +88,14 @@ export default function Cocktail() {
         <div>
             <h3>Cocktail of the day</h3>
             <img src={strImg} alt="" />
+            <div id="content">
             <p>{strDrink}</p>
             <h3>Drink type</h3>
             <p>{strAlcoholic}</p>
             <h3>Glass</h3>
             <p>{strGlass}</p>
             <h3>Ingredients</h3>
+            <div id="ingredients">
             <p>{strIngredient1} {strMeasure1}</p>
             <p>{strIngredient2} {strMeasure2}</p>
             <p>{strIngredient3} {strMeasure3}</p>
@@ -109,6 +111,8 @@ export default function Cocktail() {
             <p>{strIngredient12} {strMeasure12}</p>
             <p>{strIngredient13} {strMeasure13}</p>
             <p>{strIngredient14} {strMeasure14}</p>
+            </div>
+            </div>
             <h3>Instructions</h3>
             <p>{strInstructions}</p>
             

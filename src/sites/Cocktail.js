@@ -138,28 +138,30 @@ export default function Cocktail() {
         <button type="button" onClick={searchdrink} >search</button>
         <h3>Cocktail of the day</h3>
         <img  src={strImg}  alt="" />
-        <p>{strDrink}</p>
-        <h3>Drink type</h3>
-        <p>{strAlcoholic}</p>
-        <h3>Glass</h3>
-        <p>{strGlass}</p>
-        <h3>Instructions</h3>
-        <p>{strInstructions}</p>
-        <h3>Ingredients</h3>
-        <p>{strIngredient1} {strMeasure1}</p>
-        <p>{strIngredient2} {strMeasure2}</p>
-        <p>{strIngredient3} {strMeasure3}</p>
-        <p>{strIngredient4} {strMeasure4}</p>
-        <p>{strIngredient5} {strMeasure5}</p>
-        <p>{strIngredient6} {strMeasure6}</p>
-        <p>{strIngredient7} {strMeasure7}</p>
-        <p>{strIngredient8} {strMeasure8}</p>
-        <p>{strIngredient9} {strMeasure9}</p>
-        <p>{strIngredient10} {strMeasure10}</p>
-        <p>{strIngredient11} {strMeasure11}</p>
-        <p>{strIngredient12} {strMeasure12}</p>
-        <p>{strIngredient13} {strMeasure13}</p>
-        <p>{strIngredient14} {strMeasure14}</p>
+          <div id="content">
+          <p>{strDrink}</p>
+          <h3>Drink type</h3>
+          <p>{strAlcoholic}</p>
+          <h3>Glass</h3>
+          <p>{strGlass}</p>
+          <h3>Ingredients</h3>
+          <p>{strIngredient1} {strMeasure1}</p>
+          <p>{strIngredient2} {strMeasure2}</p>
+          <p>{strIngredient3} {strMeasure3}</p>
+          <p>{strIngredient4} {strMeasure4}</p>
+          <p>{strIngredient5} {strMeasure5}</p>
+          <p>{strIngredient6} {strMeasure6}</p>
+          <p>{strIngredient7} {strMeasure7}</p>
+          <p>{strIngredient8} {strMeasure8}</p>
+          <p>{strIngredient9} {strMeasure9}</p>
+          <p>{strIngredient10} {strMeasure10}</p>
+          <p>{strIngredient11} {strMeasure11}</p>
+          <p>{strIngredient12} {strMeasure12}</p>
+          <p>{strIngredient13} {strMeasure13}</p>
+          <p>{strIngredient14} {strMeasure14}</p>
+          <h3>Instructions</h3>
+          <p>{strInstructions}</p>
+          </div>
         </div>
       </div>);
   }
