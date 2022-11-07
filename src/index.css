@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.Strimg{
+Strimg{
   display: inline-block;
   overflow: hidden;
   object-fit: cover;

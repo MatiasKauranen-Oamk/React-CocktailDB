@@ -1,18 +1,22 @@
 body{
   color: white;
-  background-color: black;
-  /*background-image: url(images/bar.jpeg);*/
+  background-color: rgb(35, 3, 18);
+  text-align: center;
+}
+p {
+  text-indent: 30px;
 }
 footer {
   position: relative;
   height: 50px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(29, 0, 3);
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
 }
 header{
+  background-color: blueviolet;
   height: 260px;
   width: 100%;
   background-size: cover;
@@ -22,6 +26,13 @@ button{
   color: rgb(255, 255, 255);
   background-color: rgb(33, 37, 41);
 }
-div{
-  /*background-color: rgb(255, 255, 255);*/
+img {
+  width: 20%;
+  height: auto;
 }
+input[type="text"]{    
+  background-color: rgb(33, 37, 41);
+  color: rgb(255, 255, 255);
+  }
+
+  #navbar {width:200px;}

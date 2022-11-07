@@ -134,11 +134,15 @@ export default function Cocktail() {
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
+        <div>
         <button type="button" onClick={searchdrink} >search</button>
         <h3>Cocktail of the day</h3>
+        <img  src={strImg}  alt="" />
         <p>{strDrink}</p>
         <h3>Drink type</h3>
         <p>{strAlcoholic}</p>
+        <h3>Glass</h3>
+        <p>{strGlass}</p>
         <h3>Instructions</h3>
         <p>{strInstructions}</p>
         <h3>Ingredients</h3>
@@ -156,8 +160,6 @@ export default function Cocktail() {
         <p>{strIngredient12} {strMeasure12}</p>
         <p>{strIngredient13} {strMeasure13}</p>
         <p>{strIngredient14} {strMeasure14}</p>
-        <h3>Glass</h3>
-        <p>{strGlass}</p>
-        <img src={strImg} alt="" />
+        </div>
       </div>);
   }

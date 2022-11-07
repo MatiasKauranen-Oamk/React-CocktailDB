@@ -69,7 +69,14 @@ export default function Cocktail() {
                 setstrMeasure4(response.data.drinks[0].strMeasure4);
                 setstrMeasure5(response.data.drinks[0].strMeasure5);
                 setstrMeasure6(response.data.drinks[0].strMeasure6);
-                setstrMeasure7(response.data.drinks[0].strMeasure7);            
+                setstrMeasure7(response.data.drinks[0].strMeasure7);
+                setstrMeasure8(response.data.drinks[0].strMeasure8);
+                setstrMeasure9(response.data.drinks[0].strMeasure9);
+                setstrMeasure10(response.data.drinks[0].strMeasure10);
+                setstrMeasure11(response.data.drinks[0].strMeasure11);
+                setstrMeasure12(response.data.drinks[0].strMeasure12);
+                setstrMeasure13(response.data.drinks[0].strMeasure13);
+                setstrMeasure14(response.data.drinks[0].strMeasure14);          
                 i++;
             
             })
@@ -80,9 +87,12 @@ export default function Cocktail() {
 
         <div>
             <h3>Cocktail of the day</h3>
+            <img src={strImg} alt="" />
             <p>{strDrink}</p>
             <h3>Drink type</h3>
             <p>{strAlcoholic}</p>
+            <h3>Glass</h3>
+            <p>{strGlass}</p>
             <h3>Ingredients</h3>
             <p>{strIngredient1} {strMeasure1}</p>
             <p>{strIngredient2} {strMeasure2}</p>
@@ -101,9 +111,7 @@ export default function Cocktail() {
             <p>{strIngredient14} {strMeasure14}</p>
             <h3>Instructions</h3>
             <p>{strInstructions}</p>
-            <h3>Glass</h3>
-            <p>{strGlass}</p>
-            <img src={strImg} alt="" />
+            
         </div>
     );
 
