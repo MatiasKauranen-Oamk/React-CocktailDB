@@ -38,7 +38,7 @@ export default function Cocktail() {
   const [strMeasure12, setstrMeasure12] = useState('')
   const [strMeasure13, setstrMeasure13] = useState('')
   const [strMeasure14, setstrMeasure14] = useState('')
-  
+
 
   function searchdrink() {
 
@@ -81,64 +81,64 @@ export default function Cocktail() {
         setstrMeasure13(response.data.drinks[0].strMeasure13);
         setstrMeasure14(response.data.drinks[0].strMeasure15);
 
-        
+
       })
   }
 
-    useEffect(() => {
-      axios.get(url + { search })
-        .then((response) => {
-          console.log(response.data)
-          setstrDrink(response.data.drinks[0].strDrink);
-          setstrAlcoholic(response.data.drinks[0].strAlcoholic);
-          setstrInstructions(response.data.drinks[0].strInstructions);
-          setstrGlass(response.data.drinks[0].strGlass);
-          setstrImg(response.data.drinks[0].strDrinkThumb);
-          setstrIngredient1(response.data.drinks[0].strIngredient1);
-          setstrIngredient2(response.data.drinks[0].strIngredient2);
-          setstrIngredient3(response.data.drinks[0].strIngredient3);
-          setstrIngredient4(response.data.drinks[0].strIngredient4);
-          setstrIngredient5(response.data.drinks[0].strIngredient5);
-          setstrIngredient6(response.data.drinks[0].strIngredient6);
-          setstrIngredient7(response.data.drinks[0].strIngredient7);
-          setstrIngredient8(response.data.drinks[0].strIngredient8);
-          setstrIngredient9(response.data.drinks[0].strIngredient9);
-          setstrIngredient10(response.data.drinks[0].strIngredient10);
-          setstrIngredient11(response.data.drinks[0].strIngredient11);
-          setstrIngredient12(response.data.drinks[0].strIngredient12);
-          setstrIngredient13(response.data.drinks[0].strIngredient13);
-          setstrIngredient14(response.data.drinks[0].strIngredient14);
-          setstrMeasure1(response.data.drinks[0].strMeasure1);
-          setstrMeasure2(response.data.drinks[0].strMeasure2);
-          setstrMeasure3(response.data.drinks[0].strMeasure3);
-          setstrMeasure4(response.data.drinks[0].strMeasure4);
-          setstrMeasure5(response.data.drinks[0].strMeasure5);
-          setstrMeasure6(response.data.drinks[0].strMeasure6);
-          setstrMeasure7(response.data.drinks[0].strMeasure7);
-          setstrMeasure8(response.data.drinks[0].strMeasure8);
-          setstrMeasure9(response.data.drinks[0].strMeasure9);
-          setstrMeasure10(response.data.drinks[0].strMeasure10);
-          setstrMeasure11(response.data.drinks[0].strMeasure11);
-          setstrMeasure12(response.data.drinks[0].strMeasure12);
-          setstrMeasure13(response.data.drinks[0].strMeasure13);
-          setstrMeasure14(response.data.drinks[0].strMeasure15);
-        })
+  useEffect(() => {
+    axios.get(url + { search })
+      .then((response) => {
+        console.log(response.data)
+        setstrDrink(response.data.drinks[0].strDrink);
+        setstrAlcoholic(response.data.drinks[0].strAlcoholic);
+        setstrInstructions(response.data.drinks[0].strInstructions);
+        setstrGlass(response.data.drinks[0].strGlass);
+        setstrImg(response.data.drinks[0].strDrinkThumb);
+        setstrIngredient1(response.data.drinks[0].strIngredient1);
+        setstrIngredient2(response.data.drinks[0].strIngredient2);
+        setstrIngredient3(response.data.drinks[0].strIngredient3);
+        setstrIngredient4(response.data.drinks[0].strIngredient4);
+        setstrIngredient5(response.data.drinks[0].strIngredient5);
+        setstrIngredient6(response.data.drinks[0].strIngredient6);
+        setstrIngredient7(response.data.drinks[0].strIngredient7);
+        setstrIngredient8(response.data.drinks[0].strIngredient8);
+        setstrIngredient9(response.data.drinks[0].strIngredient9);
+        setstrIngredient10(response.data.drinks[0].strIngredient10);
+        setstrIngredient11(response.data.drinks[0].strIngredient11);
+        setstrIngredient12(response.data.drinks[0].strIngredient12);
+        setstrIngredient13(response.data.drinks[0].strIngredient13);
+        setstrIngredient14(response.data.drinks[0].strIngredient14);
+        setstrMeasure1(response.data.drinks[0].strMeasure1);
+        setstrMeasure2(response.data.drinks[0].strMeasure2);
+        setstrMeasure3(response.data.drinks[0].strMeasure3);
+        setstrMeasure4(response.data.drinks[0].strMeasure4);
+        setstrMeasure5(response.data.drinks[0].strMeasure5);
+        setstrMeasure6(response.data.drinks[0].strMeasure6);
+        setstrMeasure7(response.data.drinks[0].strMeasure7);
+        setstrMeasure8(response.data.drinks[0].strMeasure8);
+        setstrMeasure9(response.data.drinks[0].strMeasure9);
+        setstrMeasure10(response.data.drinks[0].strMeasure10);
+        setstrMeasure11(response.data.drinks[0].strMeasure11);
+        setstrMeasure12(response.data.drinks[0].strMeasure12);
+        setstrMeasure13(response.data.drinks[0].strMeasure13);
+        setstrMeasure14(response.data.drinks[0].strMeasure15);
+      })
 
-    }, [])
+  }, [])
 
-    return (
+  return (
+    <div>
+      <input
+        type="text"
+        name="search"
+        onChange={(e) => setSearch(e.target.value)}
+        value={search}
+      />
       <div>
-        <input
-          type="text"
-          name="search"
-          onChange={(e) => setSearch(e.target.value)}
-          value={search}
-        />
-        <div>
         <button type="button" onClick={searchdrink} >search</button>
         <h3>Cocktail of the day</h3>
-        <img  src={strImg}  alt="" />
-          <div id="content">
+        <img src={strImg} alt="" />
+        <div id="content">
           <p>{strDrink}</p>
           <h3>Drink type</h3>
           <p>{strAlcoholic}</p>
@@ -161,7 +161,7 @@ export default function Cocktail() {
           <p>{strIngredient14} {strMeasure14}</p>
           <h3>Instructions</h3>
           <p>{strInstructions}</p>
-          </div>
         </div>
-      </div>);
-  }
+      </div>
+    </div>);
+}

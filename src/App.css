@@ -1,4 +1,4 @@
-body{
+body {
   color: rgb(255, 255, 255);
   background-color: rgb(35, 3, 18);
   text-align: center;
@@ -6,16 +6,16 @@ body{
   padding-right: 10em;
 }
 
-#content{
+#content {
   padding-left: 20em;
   padding-right: 20em;
 
 }
 
-  #ingredients{
-    line-height: 70%;
-  }
-  
+#ingredients {
+  line-height: 70%;
+}
+
 footer {
   position: relative;
   height: 50px;
@@ -25,23 +25,25 @@ footer {
   right: 0px;
   margin-bottom: 0px;
 }
-header{
+
+header {
   height: 100%x;
   width: 100%;
   background-size: cover;
   margin-top: 0px;
 }
-button{
+
+button {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 37, 41);
 }
+
 img {
   width: 25%;
   height: auto;
 }
-input[type="text"]{    
+
+input[type="text"] {
   background-color: rgb(33, 37, 41);
   color: rgb(255, 255, 255);
-  }
-
-  
+}

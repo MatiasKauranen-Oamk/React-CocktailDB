@@ -42,13 +42,13 @@ export default function Cocktail() {
     useEffect(() => {
         axios.get(url)
             .then((response) => {
-                var i=0;
+                var i = 0;
                 console.log(response.data)
                 setstrDrink(response.data.drinks[0].strDrink);
                 setstrAlcoholic(response.data.drinks[0].strAlcoholic);
                 setstrInstructions(response.data.drinks[0].strInstructions);
                 setstrGlass(response.data.drinks[0].strGlass);
-                setstrImg(response.data.drinks[0].strDrinkThumb); 
+                setstrImg(response.data.drinks[0].strDrinkThumb);
                 setstrIngredient1(response.data.drinks[0].strIngredient1);
                 setstrIngredient2(response.data.drinks[0].strIngredient2);
                 setstrIngredient3(response.data.drinks[0].strIngredient3);
@@ -76,9 +76,9 @@ export default function Cocktail() {
                 setstrMeasure11(response.data.drinks[0].strMeasure11);
                 setstrMeasure12(response.data.drinks[0].strMeasure12);
                 setstrMeasure13(response.data.drinks[0].strMeasure13);
-                setstrMeasure14(response.data.drinks[0].strMeasure14);          
+                setstrMeasure14(response.data.drinks[0].strMeasure14);
                 i++;
-            
+
             })
 
     }, [])
@@ -89,33 +89,33 @@ export default function Cocktail() {
             <h3>Cocktail of the day</h3>
             <img src={strImg} alt="" />
             <div id="content">
-            <p>{strDrink}</p>
-            <h3>Drink type</h3>
-            <p>{strAlcoholic}</p>
-            <h3>Glass</h3>
-            <p>{strGlass}</p>
-            <h3>Ingredients</h3>
-            <div id="ingredients">
-            <p>{strIngredient1} {strMeasure1}</p>
-            <p>{strIngredient2} {strMeasure2}</p>
-            <p>{strIngredient3} {strMeasure3}</p>
-            <p>{strIngredient4} {strMeasure4}</p>
-            <p>{strIngredient5} {strMeasure5}</p>
-            <p>{strIngredient6} {strMeasure6}</p>
-            <p>{strIngredient7} {strMeasure7}</p>
-            <p>{strIngredient7} {strMeasure7}</p>
-            <p>{strIngredient8} {strMeasure8}</p>
-            <p>{strIngredient9} {strMeasure9}</p>
-            <p>{strIngredient10} {strMeasure10}</p>
-            <p>{strIngredient11} {strMeasure11}</p>
-            <p>{strIngredient12} {strMeasure12}</p>
-            <p>{strIngredient13} {strMeasure13}</p>
-            <p>{strIngredient14} {strMeasure14}</p>
-            </div>
+                <p>{strDrink}</p>
+                <h3>Drink type</h3>
+                <p>{strAlcoholic}</p>
+                <h3>Glass</h3>
+                <p>{strGlass}</p>
+                <h3>Ingredients</h3>
+                <div id="ingredients">
+                    <p>{strIngredient1} {strMeasure1}</p>
+                    <p>{strIngredient2} {strMeasure2}</p>
+                    <p>{strIngredient3} {strMeasure3}</p>
+                    <p>{strIngredient4} {strMeasure4}</p>
+                    <p>{strIngredient5} {strMeasure5}</p>
+                    <p>{strIngredient6} {strMeasure6}</p>
+                    <p>{strIngredient7} {strMeasure7}</p>
+                    <p>{strIngredient7} {strMeasure7}</p>
+                    <p>{strIngredient8} {strMeasure8}</p>
+                    <p>{strIngredient9} {strMeasure9}</p>
+                    <p>{strIngredient10} {strMeasure10}</p>
+                    <p>{strIngredient11} {strMeasure11}</p>
+                    <p>{strIngredient12} {strMeasure12}</p>
+                    <p>{strIngredient13} {strMeasure13}</p>
+                    <p>{strIngredient14} {strMeasure14}</p>
+                </div>
             </div>
             <h3>Instructions</h3>
             <p>{strInstructions}</p>
-            
+
         </div>
     );
 
